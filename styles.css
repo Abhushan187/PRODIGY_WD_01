@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    background-color: rgb(13, 27, 42);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.logo {
+    color: blanchedalmond;
+    font-size: 40px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color:blanchedalmond;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 15px;
+    transition: color 0.1s, transform 0.1s;
+    border-radius: 5px;
+}
+
+.nav-links a:hover {
+    color: rgb(13, 27, 42); 
+    background-color:rgb(224, 225, 221);
+    border-radius: 50px;
+    transform: scale(1.1);
+}
+
+.nav-links a.active {
+    color:rgb(255, 0, 0);
+}
+.section {
+    padding: 80px 20px;
+    color: white;
+    text-align: center;
+    position: relative;
+    transition: all 0.1s ease;
+}
+
+.home {
+    background-color: rgb(241, 250, 238);
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    font-size: 50px;
+    color: black;
+}
+
+.about{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    min-height: 10vh;
+    background-color: rgba(119, 141, 169);
+    margin-bottom: 20px;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+.services{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    min-height: 10vh;
+    background-color: rgba(65, 90, 119);
+    margin-bottom: 20px;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+.contact{
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    min-height: 10vh;
+    background-color: rgba(27, 38, 59);
+    margin-bottom: 20px;
+    transition: transform 0.1s ease, opacity 0.1s ease;
+}
+.contact ul li{
+    list-style-type: none;
+    font-size: 40px;
+    color: rgb(255, 255, 255);
+    display: inline;
+    margin: 20px;
+}
+
+.section:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.about img, .services img, .contact img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1s, transform 1s;
+}
+.home {
+    background-attachment: fixed;
+    opacity: 1;
+}
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #000000;
+    color: white;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+.back-to-top:hover {
+    background-color: #000000;
+}
